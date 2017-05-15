@@ -1,6 +1,13 @@
 #!/bin/bash
 #Usage: sudo ./install_dlib.sh 19.4
 
+apt-get update
+apt-get install -y \
+    cmake \
+    libboost-all-dev \
+    python-dev
+    
+
 mkdir -p /tmp/dlib-tmp
 curl -L https://github.com/davisking/dlib/archive/v$1.tar.gz \
         -o /tmp/dlib-tmp/dlib.tar.bz2

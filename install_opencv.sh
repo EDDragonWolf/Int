@@ -1,6 +1,13 @@
 #!/bin/bash
 #Usage: sudo ./install_opencv.sh 2.4.13
 
+apt-get update
+apt-get install -y \
+    cmake \
+    libboost-all-dev \
+    python-dev \
+    python-numpy
+
 mkdir -p /tmp/ocv-tmp
 curl -L https://github.com/Itseez/opencv/archive/$1.zip -o /tmp/ocv-tmp/ocv.zip
 unzip /tmp/ocv-tmp/ocv.zip -d /tmp/ocv-tmp
