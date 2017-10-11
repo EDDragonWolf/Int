@@ -3,6 +3,7 @@
 
 apt-get update
 apt-get install -y \
+    curl \
     cmake \
     libboost-all-dev \
     python-dev
