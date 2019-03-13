@@ -22,3 +22,9 @@ sudo ./install.sh
   ```shell
   sudo ./install_opencv.sh <version>
   ```
+
+## Supported Development Tools
+  * [ccache](https://ccache.samba.org/)
+  ```shell
+  sudo ./install_ccache.sh
+  ```
